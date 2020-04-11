@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.i_am">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/bigginer_baller"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/beginnerballerbg" />
+
+    <ToggleButton
+        android:id="@+id/begginerSkillBtn"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:background="@drawable/swoosh_underscore_toggle"
+        android:onClick="OnBegginerClicked"
+        android:text="@string/begginer"
+        android:textColor="@color/colorAccent"
+        android:textOff="@string/begginer"
+        android:textOn="@string/begginer"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ballerSkillBtn"
+        app:layout_constraintEnd_toStartOf="@+id/ballerSkillBtn"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ballerSkillBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/ballerSkillBtn"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="416dp"
+        android:background="@drawable/swoosh_underscore_toggle"
+        android:onClick="OnBallerClicked"
+        android:text="@string/baller"
+        android:textColor="@color/colorAccent"
+        android:textOff="@string/baller"
+        android:textOn="@string/baller"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/i_am_a"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/swooshlogo" />
+
+    <Button
+        android:id="@+id/FinishBtn"
+        android:layout_width="387dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/swoosh_button"
+        android:onClick="OnSkillFinishClicked"
+        android:text="FINISH"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

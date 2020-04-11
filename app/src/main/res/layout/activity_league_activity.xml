@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".league_activity">
+    tools:context=".Controller.league_activity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -44,11 +44,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ToggleButton
-        android:id="@+id/toggleButton7"
+        android:id="@+id/MensLeagueBtn"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/swoosh_underscore_toggle"
+        android:onClick="OnMensClicked"
         android:text="@string/mens"
         android:textColor="@color/colorAccent"
         android:textOff="@string/mens"
@@ -59,11 +60,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ToggleButton
-        android:id="@+id/toggleButton8"
+        android:id="@+id/WomensLeagueBtn"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/swoosh_underscore_toggle"
+        android:onClick="OnWomensClicked"
         android:text="@string/womens"
         android:textColor="@color/colorAccent"
         android:textOff="@string/womens"
@@ -71,14 +73,15 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton7" />
+        app:layout_constraintTop_toBottomOf="@+id/MensLeagueBtn" />
 
     <ToggleButton
-        android:id="@+id/toggleButton9"
+        android:id="@+id/CoedLeagueBtn"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/swoosh_underscore_toggle"
+        android:onClick="OnCoedClicked"
         android:text="@string/co_ed"
         android:textColor="@color/colorAccent"
         android:textOff="@string/co_ed"
@@ -87,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/WomensLeagueBtn" />
 
     <Button
         android:id="@+id/button2"
@@ -97,6 +100,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/swoosh_button"
+        android:onClick="leagueNextClicked"
         android:text="@string/next"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
